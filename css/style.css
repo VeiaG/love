@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body{
+    all:unset;
+    font-family: 'Inter', sans-serif;
+    background:#F5EBEB;
+    color:#867070;
+}
+.main__header{
+    margin-top:64px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size:128px;
+}
+
+.counter__wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:32px;
+}
+.counter__item h2{
+    text-align: center;
+    font-size:32px;
+    margin:0;
+}
+.counter__number{
+    margin-top:12px;
+    width:192px;
+    height:192px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:64px;
+    border:8px solid #D5B4B4;
+    background-color:#E4D0D0;
+    border-radius:24px;
+}
+@keyframes tick{
+    0% {transform:scale(1);}
+    25% {transform:scale(1.05);}
+    50% {transform:scale(1);}
+    100%{transform:scale(1);}
+}
+.anim_tick{
+    animation-name: tick;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}

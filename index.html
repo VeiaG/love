@@ -3,26 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub page as PWA template</title>
-  <link rel="canonical" href="https://codepo8.github.io/github-page-pwa/" />
-  <link rel="manifest" href="/github-page-pwa/manifest.webmanifest">
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Лізуни разом</title>
+  <link rel="canonical" href="https://veiag.github.io/love/" />
+  <link rel="manifest" href="/love/manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 </head>
 <body>
  
-  <h1>GitHub page as PWA template</h1>
-  <p>
-    This is a PWA template for GitHub pages. 
-    Make sure to check the README at 
-    <a href="https://github.com/codepo8/github-page-pwa/">https://github.com/codepo8/github-page-pwa/</a> and 
-    to change the necessary settings to your needs.
-  </p>
-
+  <div class="main__wrapper">
+    <div class="main__content">
+        <div class="main__header">
+            <h1>Лізуни разом вже :</h1>
+        </div>
+        <div class="counter__wrapper">
+            <div class="counter__item">
+                <h2>Років</h2>
+                <span id="years" class="counter__number">00</span>
+            </div>
+            <div class="counter__item">
+                <h2>Місяців</h2>
+                <span id="months" class="counter__number">00</span>
+            </div>
+            <div class="counter__item">
+                <h2>Днів</h2>
+                <span id="days" class="counter__number">00</span>
+            </div>
+            <div class="counter__item">
+                <h2>Годин</h2>
+                <span id="hours" class="counter__number">00</span>
+            </div>
+            <div class="counter__item">
+                <h2>Хвилин</h2>
+                <span id="minutes" class="counter__number" >00</span>
+            </div>
+            <div class="counter__item">
+                <h2>Секунд</h2>
+                <span id="seconds" class="counter__number">00</span>
+            </div>
+        </div>
+    </div>
+</div>
   <script>
       if (navigator.serviceWorker) {
         navigator.serviceWorker.register (
-          '/github-page-pwa/sw.js',
-          {scope: '/github-page-pwa/'}
+          '/love/sw.js',
+          {scope: '/love/'}
         )
       }
   </script>
