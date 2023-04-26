@@ -1,11 +1,11 @@
-var GHPATH = '/github-page-pwa';
-var APP_PREFIX = 'gppwa_';
+var GHPATH = '/love';
+var APP_PREFIX = 'love_';
 var VERSION = 'version_002';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
   `${GHPATH}/css/styles.css`,
-  `${GHPATH}/img/icon.png`,
+  `${GHPATH}/img/favicon-32x32.png`,
   `${GHPATH}/js/app.js`
 ]
 
